@@ -460,7 +460,7 @@ const renderCard = async (body: LanyardTypes.Root, params: Parameters): Promise<
                             font-size: 0.85rem;
                             text-overflow: ellipsis;
                             color: ${theme === "dark" ? "#ccc" : "#777"};
-                        ">By ${escape(data.spotify.artist)}</p>
+                        ">${data.spotify.artist ? `By ${escape(data.spotify.artist)}` : ""}</p>
                     </div>
                 </div>
             ` : ``
